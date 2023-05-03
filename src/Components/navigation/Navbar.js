@@ -4,7 +4,7 @@ import React from "react";
 export default function Navbar() {
   return (
     <div>
-      <ul>
+      <ul className="flex justify-center py-5 space-x-5">
         <Link href="/">
           <li>Home</li>
         </Link>

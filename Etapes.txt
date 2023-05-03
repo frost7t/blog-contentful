@@ -1,0 +1,9 @@
+Projet avec NextJs
+//////////////////
+
+1.Create projet npx create-next-app@latest
+2.install contentful dependance =>npm 1 contentful
+3.Connexion avec mes clé API contentful
+4. Créer mon contenu dans contenful
+5.Connexion avec mes clé API contenful => setting => API Keys => addKeys
+6. création fichier .env.local avec mes variables d'environnement
