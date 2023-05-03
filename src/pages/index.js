@@ -1,3 +1,4 @@
+import Hero from "@/Components/Hero";
 import Card from "@/Components/cards/Card";
 import Layout from "@/layout/Layout";
 import { createClient } from "contentful";
@@ -7,16 +8,22 @@ export default function Home({ posts }) {
   return (
     <div>
       <Layout>
-        <h3 className="">Home</h3>
-        {posts.map((post) => (
-          <Card
-            key={post.sys.id}
-            title={post.fields.title}
-            extract={post.fields.extract}
-            img={post.fields.featureImage.fields.file.url}
-            slug={post.fields.slug}
-          />
-        ))}
+        <Hero 
+        url_img="../img/bg_1.jpg"
+        title="Readit blog"
+        subtitle="For the away,behind the word moutains,far from the countries Vokalia and Consonantia, there live the blind texts.Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+        />
+        <main className="grid-cols-3 gap-3">
+          {posts.map((post) => (
+            <Card
+              key={post.sys.id}
+              title={post.fields.title}
+              extract={post.fields.extract}
+              img={post.fields.featureImage.fields.file.url}
+              slug={post.fields.slug}
+            />
+          ))}
+        </main>
       </Layout>
     </div>
   );
