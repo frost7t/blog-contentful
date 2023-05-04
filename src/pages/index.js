@@ -1,5 +1,6 @@
 import Hero from "@/Components/Hero";
 import Card from "@/Components/cards/Card";
+import CardPageNumber from "@/Components/cards/CardPageNumber";
 import Layout from "@/layout/Layout";
 import { createClient } from "contentful";
 
@@ -8,12 +9,16 @@ export default function Home({ posts }) {
   return (
     <div>
       <Layout>
-        <Hero 
-        url_img="../img/bg_1.jpg"
-        title="Readit blog"
-        subtitle="For the away,behind the word moutains,far from the countries Vokalia and Consonantia, there live the blind texts.Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+        <Hero
+          url_img="../img/bg_1.jpg"
+          title="Readit blog"
+          description="For the away,behind the word moutains,far from the countries Vokalia and Consonantia, there live the blind texts.Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+          subtitle="Hello! Welcome to"
         />
-        <main className="grid-cols-3 gap-3">
+        <main
+          id="main"
+          className="grid grid-cols-1 gap-4 mx-auto max-w-screen-lg md:grid-cols-2 lg:grid-cols-3"
+        >
           {posts.map((post) => (
             <Card
               key={post.sys.id}
@@ -24,6 +29,7 @@ export default function Home({ posts }) {
             />
           ))}
         </main>
+        <CardPageNumber />
       </Layout>
     </div>
   );
