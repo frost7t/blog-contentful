@@ -46,7 +46,7 @@ export async function getStaticProps() {
   const data = await client.getEntries({
     content_type: "blog",
     order: "sys.createdAt",
-    limit: 8,
+    limit: 9,
   });
 
   // 3.on envoie la data dans le props de ma page

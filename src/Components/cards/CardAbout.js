@@ -5,7 +5,7 @@ export default function CardAbout({ url_img, title, subtitle, description }) {
   return (
     <div className="px-5 w-full max-w-screen-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-auto sm:flex-col md:flex-row">
       <div className="mb-8 md:mb-0 md:mr-10 relative">
-        <img src={url_img} alt={title} className=" " />
+        <img src={url_img} alt={title}  />
         <div className="hidden md:block md:absolute md:top-1/2 md:-right-5">
           <div className="w-14 h-14 bg-yellow-400 rounded-full flex justify-center items-center">
             <svg

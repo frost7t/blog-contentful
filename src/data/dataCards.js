@@ -4,7 +4,7 @@ export const dataCards = [
       "Far far away,behind the word mountains, far from the countries Vokalia and Consonantia,there live the blind texts",
     title: "Roger Scott",
     subtitle: "Marketing Manager",
-    url_img: "img/image_3.jpg",
+    url_img: "img/person_1.jpg",
   },
 
   {
@@ -12,13 +12,13 @@ export const dataCards = [
       "Far far away,behind the word mountains, far from the countries Vokalia and Consonantia,there live the blind texts",
     title: "Roger Scott",
     subtitle: "Marketing Manager",
-    url_img: "img/image_2.jpg",
+    url_img: "img/person_2.jpg",
   },
   {
     description:
       "Far far away,behind the word mountains, far from the countries Vokalia and Consonantia,there live the blind texts",
     title: "Roger Scott",
     subtitle: "Marketing Manager",
-    url_img: "img/image_1.jpg",
+    url_img: "img/person_3.jpg",
   },
 ];

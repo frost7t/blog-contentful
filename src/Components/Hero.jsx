@@ -18,7 +18,7 @@ export default function Hero({ title, subtitle, url_img, description }) {
           className="h-screen bg-no-repeat bg-center bg-cover"
           style={{ backgroundImage: `url(img/${url_img})`, zIndex: -1 }}
         >
-          <div className="absolute top-0 left-0 w-full h-full  bg-gradient-to-r from-[#f65aec] via-[#ed897d] to-[#fab47b] opacity-70 z-10"></div>
+          <div className="absolute top-0 left-0 w-full h-full  bg-gradient-to-r from-[#f65aec]  to-[#fab47b] opacity-70 z-10"></div>
         </div>
         <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center text-left z-20">
           <div className="max-w-screen-lg mx-auto px-4">

@@ -3,7 +3,6 @@ import React, { useState } from "react";
 function CardTab() {
   const [activeTab, setActiveTab] = useState("Our Mission");
 
-  const tabs = ["Our Mission", "Our Vision", "Our Values"];
   // content/onglets
   const tabContent = {
     "Our Mission":

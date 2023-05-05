@@ -2,6 +2,8 @@ import Layout from "@/layout/Layout";
 import React from "react";
 import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import HeroOtherPage from "@/Components/HeroOtherPage";
+import CardPost from "@/Components/cards/CardPost";
 
 // 1. connection à contentful
 const client = createClient({
@@ -48,15 +50,29 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export default function Index({post}) {
+export default function Index({ post }) {
   // console.log(post)
-  const {title,content, featureImage } = post.fields;
+  const { title, content, featureImage } = post.fields;
   return (
     <Layout>
-      <div>
-        <img src={featureImage.fields.file.url} alt={title} className=" max-w-xs" />
-        <p className="font-bold">{title}</p>
-        <div>{documentToReactComponents(content)}</div>
+      <HeroOtherPage
+        url_img="../../img/bg_1.jpg"
+        title="Blog Single"
+        home="Home"
+        Blog="Blog"
+        BlogSingle="Blogsingle"
+      />
+      <div className="grid grid-cols-2 gap-8 justify-center items-start py-20 px-20">
+        <div>
+          <img
+            src={featureImage.fields.file.url}
+            alt={title}
+            className="w-full"
+          />
+        </div>
+        <div>
+          <CardPost />
+        </div>
       </div>
     </Layout>
   );

@@ -9,11 +9,11 @@ import CardSlideAbout from "@/Components/cards/CardSlideAbout";
 export default function About() {
   return (
     <Layout>
-      <HeroOtherPage url_img="../img/bg_1.jpg" title="About" />
+      <HeroOtherPage url_img="../img/bg_1.jpg" title="About" about="About" home="Home" />
       <div className="">
         <div>
           <CardAbout
-            url_img="../img/image_9.jpg"
+            url_img="../img/about.jpg"
             title="We give you the best articles you want."
             subtitle="Welcome to Readit"
             description="Far far away, behind the word mountais, far from the countries Vokalia and Consonantia"
